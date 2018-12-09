@@ -1,0 +1,103 @@
+.contacts {
+  padding-top: 60px;
+  &__item {
+    text-align: center;
+
+    &_icon {
+      margin-right: 0;
+      font-size: 8rem;
+      font-weight: bold;
+      color: $light;
+    }
+
+    &_title {
+      font-size: 1.875rem;
+      font-weight: bold;
+    }
+
+    &_desc {
+      margin-top: 30px;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  &__title {
+    margin-top: 50px;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: $light;
+  }
+
+  &__desc {
+    margin-top: 70px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: $dark-grey;
+  }
+
+  &__map {
+    margin: 20px 0px 40px;
+  }
+
+  label {
+    margin-top: 40px;
+    flex: 1 30%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &[for="message"] {
+      flex: 1 100%;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border: 2px solid $light;
+  }
+
+  textarea {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 2px solid $light;
+  }
+
+  input[type="submit"] {
+    margin: 40px 0;
+    padding: 1rem 2rem;
+    flex: 1 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: $dark;
+    border: transparent;
+  }
+}
+
+.main__menu_wrapper {
+  .header__top-menu {
+    &_item {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacts {
+    label {
+      flex: 1 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}

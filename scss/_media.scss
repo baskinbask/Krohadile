@@ -1,0 +1,302 @@
+@media screen and (max-width: 1200px) {
+  //Адаптивные меню
+  .main__categories {
+    padding-left: 0;
+    padding-right: 0;
+    &_title {
+      display: none;
+    }
+
+    button {
+      margin: 0px auto;
+    }
+  }
+
+  .header__top-menu {
+    display: none;
+  }
+
+  .header__top-menu_icon {
+    font-size: 1.5rem;
+  }
+
+  .main__menu {
+    align-items: center;
+
+    .header__top-menu {
+      &_item {
+        display: block;
+        margin: 0px 10px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .main__menu_item {
+      display: none;
+    }
+
+    .main__menu_item-basket,
+    .main__menu_item-loveit {
+      display: block;
+    }
+  }
+
+  .main__menu_sticky .main__menu_item-basket {
+    margin-left: 0;
+  }
+
+  .header__search input {
+    max-width: 150px;
+  }
+
+  //Стики-меню через CSS
+
+  header .header__search {
+    display: none;
+  }
+
+  .main__menu_search {
+    display: flex;
+  }
+
+  //Сетка коллекций
+  .grid {
+    grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  //Хедер
+  .header__search {
+    margin-right: 0;
+  }
+
+  .page-header {
+    padding: 50px 0;
+  }
+
+  .basket__popup_list,
+  .loveit__popup_list {
+    top: calc(100% + 21px);
+  }
+
+  //FEATURES
+  .features {
+    margin: 0;
+    margin-bottom: 40px;
+
+    &__item {
+      flex-basis: 50%;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  //Специальные предложения
+  .special__slider-right {
+    margin-top: 40px;
+  }
+
+  //НОВОСТИ
+  .news {
+    padding-bottom: 0;
+
+    &__item {
+      margin-bottom: 40px;
+
+      &_img {
+        text-align: center;
+      }
+
+      &_date {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  //Футер
+  .features__item {
+    margin-top: 40px;
+  }
+
+  .footer__lists_block {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__emails_desc {
+    text-align: center;
+  }
+
+  .footer__emails_wrap {
+    margin-top: 20px;
+  }
+
+  .footer__emails_input {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //ХЕДЕР
+  .basket__popup_list,
+  .loveit__popup_list {
+    top: 100%;
+  }
+
+  .main__categories_list--mobile {
+    transform: none;
+  }
+
+  //Сетка коллекций
+  .grid {
+    display: none;
+  }
+
+  //Специальное предложение слайдер2
+  .special__slider-right_wrapper {
+    flex-direction: column;
+  }
+
+  .special__slider_content-right {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+
+  //Модальное окно обратного звонка
+  .call__modal {
+    min-width: 0;
+    max-width: 99%;
+  }
+
+  .remodal-close {
+    left: 93%;
+  }
+
+  .basket__popup_list {
+    left: 0;
+  }
+
+  .basket__popup_list,
+  .loveit__popup_list {
+    width: 250px;
+  }
+
+  //Хедер
+  .header__contacts {
+    margin: 20px 0;
+  }
+
+  .main__menu {
+    padding: 1rem;
+  }
+
+  .main__menu_search-wrap {
+    order: 100;
+    margin-top: 10px;
+    flex-basis: 100%;
+
+    input {
+      max-width: initial;
+    }
+  }
+  .main__menu_item-basket {
+    margin-top: 10px;
+    flex-basis: 80%;
+  }
+  .main__menu_item-loveit {
+    margin-top: 10px;
+    flex-basis: 20%;
+  }
+
+  //Слайдеры
+  .main__slider {
+    &_content {
+      padding-left: 2rem;
+    }
+  }
+
+  .best__slider,
+  .brands__slider {
+    .slick-dots {
+      bottom: -25px;
+    }
+  }
+
+  .special__slider_content-right {
+    margin-left: 0;
+  }
+
+  //Лучшее
+  .best__categories_btn {
+    padding: 0.5rem;
+  }
+
+  //Баннер
+  .banner {
+    padding: 4rem;
+
+    &__title {
+      font-size: 3.625rem;
+    }
+
+    &__subtitle {
+      font-size: 2rem;
+    }
+  }
+
+  .brands__slider {
+    margin: 0;
+  }
+
+  //Футер
+  .features__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__copy {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  .up-btn {
+    right: 1rem;
+    padding-top: 17px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .main__slider {
+    &_btn {
+      display: block;
+      padding: 1rem;
+
+      & + button {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .footer__emails_input {
+    max-width: 60%;
+  }
+}

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/nanoreset.min.css">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/animate.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="libs/Remodal-master/dist/remodal.css">
+  <link rel="stylesheet" href="libs/Remodal-master/dist/remodal-default-theme.css">
+  <link rel="stylesheet" href="libs/hamburgers.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Крохадайл | Ваш аккаунт</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header id="header" class="header">
+      <div class="row justify-content-center m-0">
+        <div class="col-lg-10 p-0">
+          <ul class="header__top-menu">
+            <li class="header__top-menu_item">
+              <i class="kroha-icon-gift header__top-menu_icon"></i>
+              <a href="#">Подарочный сертификат</a>
+            </li>
+            <li class="header__top-menu_item">
+              <i class="kroha-icon-lifebuoy header__top-menu_icon"></i>
+              <a href="#">Помощь и советы</a>
+            </li>
+            <li class="header__top-menu_item">
+              <i class="kroha-icon-delivery header__top-menu_icon"></i>
+              <a href="#">Доставка и самовывоз</a>
+            </li>
+            <li class="header__top-menu_item">
+              <i class="kroha-icon-account header__top-menu_icon"></i>
+              <a href="account.html">Вход | Регистрация</a>
+            </li>
+            <li class="header__top-menu_item">
+              <i class="kroha-icon-map header__top-menu_icon"></i>
+              <a href="#">Москва</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center m-0">
+        <div class="col-lg-2 col-2 d-flex p-0">
+          <div class="header__logo ">
+            <a href="/">
+              <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="Крохадайл">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-lg-flex d-sm-none d-flex align-items-center p-0">
+          <div class="header__search">
+            <input type="text" class="header__search_input" placeholder="Поиск">
+            <button class="btn-var header__search_btn" type="button">
+              <i class="kroha-icon-search header__search_btn-icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-7 d-flex align-items-center justify-content-center justify-content-sm-end p-0 ">
+          <div class="header__contacts">
+            <div class="header__contacts_wrap">
+              <p class="header__contacts_phone">+ 7 (495) 555-66-33</p>
+              <p class="header__contacts_email">info@krohodail.ru</p>
+            </div>
+            <button class="header__contacts_btn">
+              <i class="kroha-icon-call header__contacts_btn-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main__sticky-menu">
+      <div class="row d-flex justify-content-center m-0">
+        <div class="col-xl-3 col-md-1 p-0">
+          <div class="main__categories">
+            <a href="catalog.html" class="main__categories_title">Каталог товаров</a>
+            <button class="hamburger hamburger--collapse header__menu_btn" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul class="main__categories_list--mobile">
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-new main__categories_icon new"></i>
+                  <span>Новое</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-event main__categories_icon sale"></i>
+                  <span>Акции</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-lightning main__categories_icon top"></i>
+                  <span>Популярное</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat1 main__categories_icon"></i>
+                  <span>Постельные принадлежности</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat2 main__categories_icon"></i>
+                  <span>Детские коляски</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat3 main__categories_icon"></i>
+                  <span> Детский транспорт</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat4 main__categories_icon"></i>
+                  <span>Детсткое питание</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat5 main__categories_icon"></i>
+                  <span>Детская мебель</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat6 main__categories_icon"></i>
+                  <span>Детская одежда</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat7 main__categories_icon"></i>
+                  <span>Гигиена и здоровье</span>
+                </a>
+              </li>
+              <li class="main__categories_item">
+                <a class="main__categories_link" href="#">
+                  <i class="kroha-icon-cat8 main__categories_icon"></i>
+                  <span>Детские игрушки и игры</span>
+                </a>
+              </li>
+              <li class="main__menu_item main__categories_item">
+                <a class="main__categories_link" href="about.html">О нас</a>
+              </li>
+              <li class="main__menu_item main__categories_item">
+                <a class="main__categories_link" href="news.html">Новости</a>
+              </li>
+              <li class="main__menu_item main__categories_item">
+                <a class="main__categories_link" href="#">Помощь</a>
+              </li>
+              <li class="main__menu_item main__categories_item">
+                <a class="main__categories_link" href="catalog.html">Магазин</a>
+              </li>
+              <li class="main__menu_item main__categories_item">
+                <a class="main__categories_link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-9 col-md-11 p-0">
+          <nav class="main__menu_wrapper">
+            <ul class="main__menu">
+              <li class="header__top-menu_item">
+                <a href="#"><i class="kroha-icon-map header__top-menu_icon"></i><span>Москва</span></a>
+              </li>
+              <li class="header__top-menu_item">
+                <a href="account.html"><i class="kroha-icon-account header__top-menu_icon"></i><span>Вход | Регистрация</span></a>
+              </li>
+              <li class="header__top-menu_item">
+                <a href="#"><i class="kroha-icon-gift header__top-menu_icon"></i><span>Подарочный сертификат</span></a>
+              </li>
+              <li class="header__top-menu_item">
+                <a href="#"><i class="kroha-icon-lifebuoy header__top-menu_icon"></i><span>Помощь и советы</span></a>
+              </li>
+              <li class="header__top-menu_item">
+                <a href="#"><i class="kroha-icon-delivery header__top-menu_icon"></i><span>Доставка и самовывоз</span></a>
+              </li>
+              <li class="main__menu_item">
+                <a href="about.html">О нас</a>
+              </li>
+              <li class="main__menu_item">
+                <a href="news.html">Новости</a>
+              </li>
+              <li class="main__menu_item">
+                <a href="#">Помощь</a>
+              </li>
+              <li class="main__menu_item">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li class="main__menu_item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+              <li class="main__menu_search-wrap">
+                <div class="header__search main__menu_search">
+                  <input type="text" class="header__search_input" placeholder="Поиск">
+                  <button class="btn-var header__search_btn" type="button">
+                    <i class="kroha-icon-search header__search_btn-icon"></i>
+                  </button>
+                </div>
+              </li>
+              <li class="main__menu_item main__menu_item-basket">
+                <a href="basket.html">
+                  <i class="kroha-icon-basket main__menu_item-icon"></i>
+                  <div class="main__menu_item-count">3</div>
+                  <span class="main__menu_item-sum">4 321 &#8381;</span>
+                </a>
+              </li>
+              <li class="main__menu_item main__menu_item-loveit">
+                <a href="#">
+                  <i class="kroha-icon-love-it main__menu_item-icon"></i>
+                  <div class="main__menu_item-count">3</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="page-header">
+      <div class="row d-flex justify-content-center m-0">
+        <div class="col-lg-10 col-12 d-flex flex-wrap justify-content-between align-items-center">
+          <p class="page-header__title">Ваш аккаунт</p>
+          <div class="page-header__breadcrumbs d-flex">
+            <a href="#">Главная</a>
+            <a class="is-active" href="#">Ваш аккаунт</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="account">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-sm-10 col-12">
+          <div class="account__signup-card">
+            <p class="account__title">Регистрация</p>
+            <input type="text" placeholder="Имя*">
+            <input type="email" placeholder="E-mail*">
+            <input type="password" placeholder="Пароль*">
+            <input type="password" placeholder="Подтвердите пароль*">
+            <div class="form-row form-group">
+              <div class="custom-control custom-checkbox filter__category_checkbox">
+                <input name="rus" type="checkbox" id="signup" value="forever" class="custom-control-input">
+                <label class="custom-control-label" for="signup">Подписаться на новости</label>
+              </div>
+            </div>
+
+            <input class="btn-var" type="submit" value="Зарегистрироваться">
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-10 col-12">
+          <div class="account__signup-card account__signin-card">
+            <p class="account__title">Вход</p>
+            <input type="text" placeholder="Логин*">
+            <input type="password" placeholder="Пароль*">
+            <div class="form-row form-group">
+              <div class="custom-control custom-checkbox filter__category_checkbox">
+                <input name="rus" type="checkbox" id="signin" value="forever" class="custom-control-input">
+                <label class="custom-control-label" for="signin">Запомнить меня</label>
+              </div>
+            </div>
+            <input class="btn-var" type="submit" value="Авторизоваться">
+            <p class="account__desc">Регистрация на этом сайте позволяет получить доступ к статусу заказа и истории. Просто
+              заполните поля ниже и мы получим новый счет, открытый для вас в кратчайшие сроки. Мы попросим вас предоставить
+              информацию, необходимую для ускорения и упрощения процесса покупки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rewiews">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 col-sm-10 col-xs-12">
+          <div class="rewiews__slider">
+            <div class="rewiews__slider_item">
+              <h2 class="section__title rewiews__slider_title">Что говорят о нас</h2>
+              <div class="rewiews__slider_avatar">
+                <img src="img/insta.png" alt="">
+              </div>
+              <p class="rewiews__slider_stars product__card_stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+              <p class="rewiews__slider_desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="rewiews__slider_item">
+              <h2 class="section__title rewiews__slider_title">Что говорят о нас</h2>
+              <div class="rewiews__slider_avatar">
+                <img src="img/insta.png" alt="">
+              </div>
+              <p class="rewiews__slider_stars product__card_stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+              <p class="rewiews__slider_desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="rewiews__slider_item">
+              <h2 class="section__title rewiews__slider_title">Что говорят о нас</h2>
+              <div class="rewiews__slider_avatar">
+                <img src="img/insta.png" alt="">
+              </div>
+              <p class="rewiews__slider_stars product__card_stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+              <p class="rewiews__slider_desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 mt-lg-0 mt-5 col-sm-10 col-xs-12">
+          <div class="rewiews__insta">
+            <h2 class="section__title rewiews__insta_title">@instagram</h2>
+            <div class="rewiews__insta_grid">
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+              <div class="rewiews__insta_item">
+                <img src="img/insta.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="features footer__features">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="features__item footer__features_item mt-0">
+                  <i class="kroha-icon-delivery features__item_icon footer__features_icon"></i>
+                  <p>
+                    <strong>Бесплатная доставка</strong>
+                    <br> свыше 500 &#8381;</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="features__item footer__features_item mt-sm-0">
+                  <i class="kroha-icon-guarantee features__item_icon footer__features_icon"></i>
+                  <p>
+                    <strong>30 дней</strong>
+                    <br> гарантия возврата денег</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="features__item footer__features_item">
+                  <i class="kroha-icon-help features__item_icon footer__features_icon"></i>
+                  <p>
+                    <strong>Поддержка</strong>
+                    <br> 24/7 в неделю</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="features__item footer__features_item">
+                  <i class="kroha-icon-sale features__item_icon footer__features_icon"></i>
+                  <p>
+                    <strong>Акции</strong>
+                    <br> скидки от 10%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__lists">
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer__lists_block footer__contacts mt-0">
+                  <p class="footer__title">О нас</p>
+                  <ul class="footer__list">
+                    <li class="footer__phone">
+                      <a href="callto:+ 74955556633">
+                        <i class="kroha-icon-phone footer__contacts_icon"></i>+ 7 (495) 555-66-33
+                      </a>
+                    </li>
+                    <li class="footer__email">
+                      <a href="#">
+                        <i class="kroha-icon-mail footer__contacts_icon"></i>info@krohadail.ru
+                      </a>
+                    </li>
+                    <li class="footer__address">
+                      <a href="#">
+                        <i class="kroha-icon-map footer__contacts_icon"></i>53 Смоленская, Москва
+                      </a>
+                    </li>
+                    <li>
+                      <ul class="d-flex footer__social">
+                        <li class="footer__social_item">
+                          <a href="">
+                            <i class="footer__social_icon"></i>
+                          </a>
+                        </li>
+                        <li class="footer__social_item">
+                          <a href="">
+                            <i class="footer__social_icon"></i>
+                          </a>
+                        </li>
+                        <li class="footer__social_item">
+                          <a href="">
+                            <i class="footer__social_icon"></i>
+                          </a>
+                        </li>
+                        <li class="footer__social_item">
+                          <a href="">
+                            <i class="footer__social_icon"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer__lists_block mt-md-0">
+                  <p class="footer__title">Магазин</p>
+                  <ul class="footer__list">
+                    <li>
+                      <a href="">Контакты</a>
+                    </li>
+                    <li>
+                      <a href="">Пункты самовывоза</a>
+                    </li>
+                    <li>
+                      <a href="">Каталог</a>
+                    </li>
+                    <li>
+                      <a href="">Суперцены</a>
+                    </li>
+                    <li>
+                      <a href="">Поставщикам</a>
+                    </li>
+                    <li>
+                      <a href="">Распродажа детских товаров</a>
+                    </li>
+                    <li>
+                      <a href="">Школьная ярмарка</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer__lists_block">
+                  <p class="footer__title">Помощь</p>
+                  <ul class="footer__list">
+                    <li>
+                      <a href="">Возврат и обмен товара</a>
+                    </li>
+                    <li>
+                      <a href="">Доставка и оплата</a>
+                    </li>
+                    <li>
+                      <a href="">Пользовательское соглашение</a>
+                    </li>
+                    <li>
+                      <a href="">Рейтинг детских товаров</a>
+                    </li>
+                    <li>
+                      <a href="">Гид по товарам</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer__lists_block">
+                  <p class="footer__title">Сообщество</p>
+                  <ul class="footer__list">
+                    <li>
+                      <a href="">Календарь беременности</a>
+                    </li>
+                    <li>
+                      <a href="">Медицинские центры</a>
+                    </li>
+                    <li>
+                      <a href="">Вопрос врачу</a>
+                    </li>
+                    <li>
+                      <a href="">Галерея</a>
+                    </li>
+                    <li>
+                      <a href="">Статьи</a>
+                    </li>
+                    <li>
+                      <a href="">Линеечки</a>
+                    </li>
+                    <li>
+                      <a href="">Форум</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__emails">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-10">
+            <div class="footer__emails_desc">
+              <a href="#">Подпишитесь</a> на нашу рассылку и узнавайте первыми о специальных предложениях
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-10">
+            <div class="footer__emails_wrap">
+              <label for="footer_email"></label>
+              <input class="footer__emails_input" id="footer__email" type="text" placeholder="e-mail">
+              <button class="btn-var footer__emails_btn" type="button">
+                Подписаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row justify-content-center">
+        <div class="footer__copy">
+          <p>
+            Интернет-магазин детских товаров
+            <br>
+            <a href="#">© Krohadail.ru 2018</a>
+          </p>
+          <a href="#header" class="up-btn">❯</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="remodal animated" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="special__slider-right_item product__modal_item">
+      <div class="special__slider-right_wrapper">
+        <div class="special__slider-right_img">
+          <img src="img/foto-right-slider.jpg" alt="">
+        </div>
+        <div class="special__slider_content special__slider_content-right">
+          <p class="special__slider_category product__card_category">Футболки и топы</p>
+          <div class="special__slider_label product__card_label">
+            <strong>M-Bimbo Футболка для мальчика</strong>
+            <div class="special__slider_stars product__card_stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <span class="special__slider_price product__card_price">
+              <b>500 &#8381;</b>
+            </span>
+            <span class="special__slider_priceOld product__card_priceOld">
+              <s>
+                <b>1 200 &#8381;</b>
+              </s>
+            </span>
+          </div>
+          <p class="special__slider_desc">Детская футболка с коротким рукавом идеально подойдет вашему ребенку, обеспечивая
+            ему наибольший комфорт. Футболка выполнена из натурального хлопка, благодаря чему она необычайно мягкая и приятная
+            на ощупь, не раздражает нежную кожу ребенка и хорошо вентилируется.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="libs/Remodal-master/dist/remodal.min.js"></script> -->
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

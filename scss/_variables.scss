@@ -1,0 +1,219 @@
+//Colors
+$dark: #247d6d;
+$light: #77c7b3;
+$red: #f7777a;
+$grey: #f8f8f8;
+$dark-grey: #c6c6c6;
+$shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+//Buttons styling
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-var {
+  @include button-reset;
+
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  // border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  // padding: 8px 10px;
+  background-color: $dark;
+  border: 2px solid transparent;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-var_invers {
+  background-color: transparent;
+  border: 2px solid $dark;
+}
+
+/* inverse colors on mouse-over and focus */
+.btn-var:hover,
+.btn-var:focus,
+.btn-var_invers:hover,
+.btn-var_invers:focus {
+  // color: #fff;
+  // border-color: $brown;
+  // background-color: $brown;
+  box-shadow: $shadow;
+}
+
+.btn-var:active {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  outline: transparent;
+}
+
+.btn-var {
+  /* ... */
+  /* all browsers: remove the default outline since
+      we are rolling our own focus styles */
+  outline: none;
+}
+
+/* Firefox: removes the inner border shown on focus */
+.btn-var::-moz-focus-inner {
+  border: none;
+}
+
+//FONTS
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/mont.woff2") format("woff2"),
+    url("../fonts/mont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kroha";
+  src: url("../fonts/kroha.eot?2beea2");
+  src: url("../fonts/kroha.eot?2beea2#iefix") format("embedded-opentype"),
+    url("../fonts/kroha.ttf?2beea2") format("truetype"),
+    url("../fonts/kroha.woff?2beea2") format("woff"),
+    url("../fonts/kroha.svg?2beea2#kroha") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="kroha-icon-"],
+[class*=" kroha-icon-"] {
+  /* use !important to prevent issues with browser extensions that change ../fonts */
+  font-family: "kroha" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: inherit;
+  margin-right: 0.2em;
+  text-align: center;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kroha-icon-call:before {
+  content: "\fea07";
+}
+.kroha-icon-sale:before {
+  content: "\fea23";
+}
+.kroha-icon-fb:before {
+  content: "\fea31";
+}
+.kroha-icon-twitter:before {
+  content: "\fea32";
+}
+.kroha-icon-inst:before {
+  content: "\fea33";
+}
+.kroha-icon-vk:before {
+  content: "\fea34";
+}
+.kroha-icon-gift:before {
+  content: "\fea01";
+}
+.kroha-icon-lifebuoy:before {
+  content: "\fea02";
+}
+.kroha-icon-delivery:before {
+  content: "\fea03";
+}
+.kroha-icon-account:before {
+  content: "\fea04";
+}
+.kroha-icon-map:before {
+  content: "\fea05";
+}
+.kroha-icon-search:before {
+  content: "\fea06";
+}
+.kroha-icon-basket:before {
+  content: "\fea08";
+}
+.kroha-icon-love-it:before {
+  content: "\fea09";
+}
+.kroha-icon-new:before {
+  content: "\fea10";
+}
+.kroha-icon-event:before {
+  content: "\fea11";
+}
+.kroha-icon-lightning:before {
+  content: "\fea12";
+}
+.kroha-icon-cat1:before {
+  content: "\fea13";
+}
+.kroha-icon-cat2:before {
+  content: "\fea14";
+}
+.kroha-icon-cat3:before {
+  content: "\fea15";
+}
+.kroha-icon-cat4:before {
+  content: "\fea16";
+}
+.kroha-icon-cat5:before {
+  content: "\fea17";
+}
+.kroha-icon-cat6:before {
+  content: "\fea18";
+}
+.kroha-icon-cat7:before {
+  content: "\fea19";
+}
+.kroha-icon-cat8:before {
+  content: "\fea20";
+}
+.kroha-icon-guarantee:before {
+  content: "\fea21";
+}
+.kroha-icon-help:before {
+  content: "\fea22";
+}
+.kroha-icon-compare:before {
+  content: "\fea24";
+}
+.kroha-icon-comment:before {
+  content: "\fea25";
+}
+.kroha-icon-phone:before {
+  content: "\fea26";
+}
+.kroha-icon-mail:before {
+  content: "\fea27";
+}
+.kroha-icon-coordinate:before {
+  content: "\fea28";
+}
+.kroha-icon-call2:before {
+  content: "\fea29";
+}
+.kroha-icon-send:before {
+  content: "\fea30";
+}

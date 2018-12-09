@@ -1,0 +1,23 @@
+.about {
+  padding: 50px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 2.125rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+  }
+
+  &__slider {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: 1.125rem;
+    text-align: justify;
+  }
+}

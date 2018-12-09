@@ -1,0 +1,318 @@
+//Заголовок и хлебные крошки
+.page-header {
+  padding: 50px 0 50px 40px;
+  background: $grey;
+
+  &__title {
+    font-size: 1.875rem;
+  }
+
+  &__breadcrumbs {
+    a {
+      display: inline-block;
+      font-size: 1.25rem;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+
+        &::after {
+          content: ">";
+          width: 8px;
+          height: 8px;
+          margin-left: 25px;
+        }
+      }
+
+      &.is-active {
+        color: $light;
+      }
+    }
+  }
+}
+
+.single-product {
+  padding: 50px 0 65px;
+
+  //Галерея товара
+  &__slider {
+    &_item {
+      max-height: 910px;
+      background: $grey;
+    }
+
+    &-nav {
+      margin-top: 30px;
+
+      .slick-slide {
+        text-align: center;
+      }
+
+      .single-product__slider_item {
+        max-width: 135px;
+        height: 170px;
+
+        img {
+          margin: 20% auto;
+        }
+      }
+
+      .slick-prev {
+        left: 0;
+
+        &::before {
+          opacity: 1;
+          padding: 0 5px 5px 0;
+          background: #fff;
+        }
+      }
+
+      .slick-next {
+        right: 0;
+
+        &::before {
+          opacity: 1;
+          padding: 0 0 5px 5px;
+          background: #fff;
+        }
+      }
+
+      .slick-current .single-product__slider_item {
+        border: 1px solid rgba($color: $light, $alpha: 0.4);
+      }
+    }
+  }
+
+  //Контент карточки товара
+  &__card {
+    &_title {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: $light;
+    }
+
+    &_category {
+      font-size: 1.45rem;
+    }
+
+    &_stars {
+      font-size: 1.5rem;
+    }
+
+    & span {
+      font-size: 2.25rem;
+    }
+
+    &_desc {
+      font-size: 1.125rem;
+      font-weight: 400;
+
+      p {
+        text-indent: 10px;
+      }
+    }
+
+    &_colors {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      font-size: 1.5rem;
+
+      a {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        margin-left: 30px;
+        background: #000;
+
+        &:nth-child(1) {
+          border: 1px solid #000;
+          background: #fff;
+        }
+
+        &:nth-child(2) {
+          background: red;
+        }
+
+        &:nth-child(3) {
+          background: yellowgreen;
+        }
+
+        &:nth-child(4) {
+          background: blueviolet;
+        }
+
+        &:nth-child(5) {
+          background: green;
+        }
+      }
+    }
+
+    &_sizes {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      font-size: 1.5rem;
+
+      a {
+        margin-left: 30px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+
+    &_counter {
+      display: flex;
+      margin-top: 30px;
+      input {
+        padding: 30px 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 1px solid $dark-grey;
+        -moz-appearance: textfield;
+      }
+    }
+
+    &_basket-btn {
+      margin: 0;
+      margin-left: 30px;
+      padding: 31px 80px;
+      border: none;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #fff;
+      background: $dark;
+    }
+
+    &_loveIt-btn,
+    &_compare-btn {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #000;
+      background: #fff;
+    }
+
+    &_compare-btn {
+      margin-left: 10px;
+    }
+
+    &_social {
+      margin-top: 30px;
+      font-size: 1.5rem;
+    }
+  }
+
+  //Табы с доп. описанием
+  &__tabs {
+    margin-top: 80px;
+
+    .nav-item {
+      padding: 0px 20px;
+    }
+
+    .nav-link {
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      color: $dark-grey;
+      border-radius: 0;
+
+      &.active {
+        font-weight: bold;
+        color: #000;
+        background: #fff;
+        border-bottom: 2px solid $dark;
+      }
+    }
+
+    .tab-content {
+      margin-top: 50px;
+    }
+
+    .tab-pane {
+      font-size: 1.5rem;
+
+      p:not(:first-child) {
+        margin: 0.75rem 0;
+      }
+    }
+
+    .tab-title {
+      margin-bottom: 50px;
+      font-size: 2.125rem;
+      text-transform: uppercase;
+      color: $dark-grey;
+    }
+  }
+
+  //Похожие товары
+  &__related {
+    padding: 50px 0 65px;
+
+    &_title {
+      font-size: 2.75rem;
+    }
+
+    .product__card_popup-btn {
+      font-size: 0.875rem;
+    }
+
+    .product__card_img img {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .single-product__card_counter input {
+    padding: 0px 20px;
+  }
+
+  .single-product__card_basket-btn {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .single-product__card {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //Цвета и размеры
+  .single-product__card_colors a {
+    margin: 10px;
+    margin-top: 0;
+  }
+
+  .single-product__card_sizes a {
+    margin: 10px;
+    margin-top: 0;
+  }
+
+  //Кнопка корзина и счетчик
+  .single-product__card_counter input {
+    flex-basis: 49%;
+  }
+
+  .single-product__card_basket-btn {
+    flex-basis: 49%;
+  }
+
+  //Похожие товары
+  .single-product__related {
+    .product__card {
+      margin-top: 40px;
+    }
+  }
+
+  //Табы
+  .single-product__tabs {
+    & .nav-item {
+      padding: 0px 10px;
+    }
+
+    & .nav-link {
+      font-size: 0.875rem;
+    }
+  }
+}
